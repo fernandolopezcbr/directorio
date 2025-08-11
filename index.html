@@ -366,11 +366,11 @@ header img {
                 const button2 = document.createElement('div');
 
                 // Revisar el valor de la columna 5 (zona)
-if (rowData[4].toLowerCase() === "zona 9") {
+if (rowData[4].toLowerCase() === "Zona 9") {
     // Si es zona 9, agregar 7728 8400 + la extensión de la columna 7
     button2.innerHTML = `<button class="boton1"><a href="tel:77288400,${rowData[6] || ""}"  style="text-decoration: none; color: inherit;"> 77288400 <b>| Ext. ${rowData[6] || "Sin extension"}</b> <i class="fas fa-phone"></i>
 </a> </button>`;  // Columna 7 es la extensión
-} else if (rowData[4].toLowerCase() === "zona 3") {
+} else if (rowData[4].toLowerCase() === "Zona 3") {
     // Si es zona 3, agregar 7932 9000 + la extensión de la columna 7
     button2.innerHTML = `<button class="boton1"><a href="tel:79329000,${rowData[6] || ""}"  style="text-decoration: none; color: inherit;"> 79329000 <b>| Ext. ${rowData[6] || "Sin extension"} <a/><i class="fas fa-phone"></i></b></button>`;  // Columna 7 es la extensión
 } else {
@@ -445,5 +445,6 @@ buttonContainer.appendChild(button2);
     </script>
 </body>
 </html>
+
 
 
