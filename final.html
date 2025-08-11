@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio UMES</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<
+    <style>
+        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Fondo claro para todo el cuerpo */
+            color: #333; /* Texto en color gris oscuro */
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* Estilo para el header */
+        header {
+            background-color: #153916; /* Verde oscuro */
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        /* Estilo para la imagen */
+header img {
+    max-width: 100%;
+    height: auto;
+    width: 90px; /* Ajusta el tamaño de la imagen */
+}
+
+        * Medias query para pantallas pequeñas */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem; /* Reducir el tamaño del texto */
+    }
+    header img {
+        max-height: 20px; /* Reducir el tamaño del logo */max-width: 100%;
+    height: auto;
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    }
+}
+
+        header img {
+            max-height:125px; /* Ajustar el tamaño del logo */
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff; /* Azul oscuro */
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            margin: 0 auto 20px auto; 
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: block;         
+            box-sizing: border-box;
+        }
+
+        /* Medias query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 80%; /* Reducir el ancho en pantallas pequeñas */
+    }
+}
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+
+        /* Medias query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card-container {
+        width: 100%; /* Hacer las tarjetas de ancho completo en pantallas pequeñas */
+    }
+}
+
+        .card {
+            width: 1000px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 18px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Medias query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* Hacer que las tarjetas ocupen el 100% del ancho */
+    }
+}
+
+
+        .card div {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card .card-header {
+            font-weight: bold;
+            color: #003366; /* Azul oscuro */
+        }
+
+        .large-text {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: #006400; /* Verde oscuro */
+        }
+
+        .content-below {
+            text-align: center;
+            font-size: 18px;
+            color: #000000; /* Negro */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        /* Medias query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .button-container {
+        display:flex;justify-content:center;gap:10px;margin-top:8px;   
+    }
+}
+
+
+
+
+
+        /* Botones */
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #136413; /* Verde claro */
+            color: #fff; /* Azul oscuro */
+        }
+
+        @media (max-width: 600px) {
+    .boton1 {
+        font-size: 12.5px; /* Reducir el tamaño del texto del botón */
+        padding: 13px 3px; /* Reducir el espacio alrededor del texto */
+    }
+}
+
+        button:hover {
+            background-color: #32CD32; /* Verde más oscuro al pasar el ratón */
+        }
+
+        button:disabled {
+            cursor: not-allowed;
+            background-color: #ccc;
+        }
+
+        .filters-container {
+            display: flex;
+            justify-content: center;
+            gap: 550px;
+            margin-top: 58px;
+        }
+
+
+        /* Medias query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .filters-container {
+        flex-direction: column; /* Apilar los filtros en lugar de alinearlos horizontalmente */
+        gap: 35px; /* Reducir el espacio entre filtros */
+    }
+}
+
+        .pagination-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button:disabled {
+            cursor: not-allowed;
+            background-color: #ccc;
+        }
+
+        .filters-container label {
+            color: #003366; /* Azul oscuro para las etiquetas */
+        }
+
+        .filters-container select {
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Estilo para los textos de filtro */
+        .filter-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Logo -->
+        <img src="https://static.wixstatic.com/media/9726ef_c411753c1d2f444f9d63f94c85737f55~mv2.png/v1/fill/w_135,h_136,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/9726ef_c411753c1d2f444f9d63f94c85737f55~mv2.png" alt="Logo UMES"> <!-- Cambia "logo.png" por la ruta de tu logo -->
+        <h1>Directorio Personal Administrativo UMES</h1>
+
+        
+    <input type="text" id="search-input" placeholder="Buscar..." onkeyup="filterTable()">
+    
+    </header>
+
+    <br><br><br><br><br><br><br>
+    <h1>Directorio Personal Administrativo UMES </h1>
+    
+    <div class="filters-container">
+        <div class="filter-item">
+            <label for="records-per-page">Mostrar</label>
+            <select id="records-per-page" onchange="changeRecordsPerPage()">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+            <span> datos por página</span>
+        </div>
+        <div class="filter-item">
+            <label for="zone-select">Filtrar por Zona</label>
+            <select id="zone-select" onchange="filterTable()">
+                <option value="">Todas las Zonas</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="card-container" class="card-container"></div>
+
+    <div id="pagination-controls" class="pagination-controls">
+        <button id="prev-page" onclick="changePage(-1)">Previo</button>
+        <span id="page-info"></span>
+        <button id="next-page" onclick="changePage(1)">Siguiente</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+    <script>
+        let currentPage = 1;
+        let recordsPerPage = 10;
+        let jsonData = [];
+        let filteredData = [];
+
+        window.onload = function() {
+            const excelFileUrl = 'files/hoja1.xlsx';
+
+            fetch(excelFileUrl)
+                .then(response => response.arrayBuffer())
+                .then(data => {
+                    const workbook = XLSX.read(data, { type: 'array' });
+                    const sheet = workbook.Sheets[workbook.SheetNames[0]];
+                    jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+                    filteredData = jsonData.slice();
+                    populateZoneFilter();
+                    displayCards();
+                })
+                .catch(error => {
+                    console.error('Error al cargar el archivo Excel:', error);
+                });
+        };
+
+        function displayCards() {
+            const cardContainer = document.getElementById('card-container');
+            cardContainer.innerHTML = '';
+            const startIndex = (currentPage - 1) * recordsPerPage;
+            const endIndex = startIndex + recordsPerPage;
+            const pageData = filteredData.slice(startIndex, endIndex);
+
+            pageData.forEach(rowData => {
+                const card = document.createElement('div');
+                card.classList.add('card');
+
+                // Columna 2 (centrada y con letras grandes)
+                const col2 = document.createElement('div');
+                col2.classList.add('large-text');
+                col2.textContent = rowData[1];  // Columna 2
+                card.appendChild(col2);
+
+                // Columna 6 (debajo de la columna 2)
+                const col6 = document.createElement('div');
+                col6.classList.add('content-below');
+                col6.innerHTML= `<b>${rowData[5] || "Sin correo"}</b>`;  // Columna 6
+                card.appendChild(col6);
+
+                // Contenido de las columnas 3, 4 y 5
+                const contentRow = document.createElement('div');
+                contentRow.classList.add('content-below');
+                contentRow.textContent = `Departamento: ${rowData[2]} | Puesto: ${rowData[3]} | Sede: ${rowData[4]}`;
+                card.appendChild(contentRow);
+
+                // Botones con el contenido de la columna 6 y 7
+                const buttonContainer = document.createElement('div');
+                buttonContainer.classList.add('button-container');
+
+                const button1 = document.createElement('div');
+                //button1.textContent = `${rowData[5]}`;  // Columna 5
+                button1.innerHTML= `<button onclick="window.location.href = 'mailto:${rowData[5] || "Correo vacio"}'" class="boton1"><b><i class="fa-regular fa-envelope"></i> ${rowData[5] || "Sin correo"}  </b>
+</button> `;  // Columna 6
+                buttonContainer.appendChild(button1);
+
+                /*
+                const button2 = document.createElement('button');
+                button2.textContent = `${rowData[6]}`;  // Columna 7
+                buttonContainer.appendChild(button2);
+                */
+                const button2 = document.createElement('div');
+
+                // Revisar el valor de la columna 5 (zona)
+if (rowData[4].toLowerCase() === "zona 9") {
+    // Si es zona 9, agregar 7728 8400 + la extensión de la columna 7
+    button2.innerHTML = `<button class="boton1"><a href="tel:77288400,${rowData[6] || ""}"  style="text-decoration: none; color: inherit;"> 77288400 <b>| Ext. ${rowData[6] || "Sin extension"}</b> <i class="fas fa-phone"></i>
+</a> </button>`;  // Columna 7 es la extensión
+} else if (rowData[4].toLowerCase() === "zona 3") {
+    // Si es zona 3, agregar 7932 9000 + la extensión de la columna 7
+    button2.innerHTML = `<button class="boton1"><a href="tel:79329000,${rowData[6] || ""}"  style="text-decoration: none; color: inherit;"> 79329000 <b>| Ext. ${rowData[6] || "Sin extension"} <a/><i class="fas fa-phone"></i></b></button>`;  // Columna 7 es la extensión
+} else {
+    // Si no es ni zona 9 ni zona 3, mostrar solo la extensión
+    button2.innerHTML = `<button class="boton1"><a href="tel:79329000" style="text-decoration: none; color: inherit;"> ${rowData[6] || "Sin numero"} <a/><i class="fas fa-phone"></i></button>`;  // Solo extensión
+}
+
+buttonContainer.appendChild(button2);
+
+
+                card.appendChild(buttonContainer);
+                cardContainer.appendChild(card);
+            });
+
+            updatePaginationControls();
+        }
+
+        function updatePaginationControls() {
+            const totalPages = Math.ceil(filteredData.length / recordsPerPage);
+            const pageInfo = document.getElementById('page-info');
+            const prevButton = document.getElementById('prev-page');
+            const nextButton = document.getElementById('next-page');
+
+            pageInfo.textContent = `Página ${currentPage} de ${totalPages}`;
+
+            prevButton.disabled = currentPage === 1;
+            nextButton.disabled = currentPage === totalPages;
+        }
+
+        function changeRecordsPerPage() {
+            const select = document.getElementById('records-per-page');
+            recordsPerPage = parseInt(select.value);
+            currentPage = 1;
+            displayCards();
+        }
+
+        function changePage(direction) {
+            const totalPages = Math.ceil(filteredData.length / recordsPerPage);
+            currentPage += direction;
+
+            if (currentPage < 1) currentPage = 1;
+            if (currentPage > totalPages) currentPage = totalPages;
+
+            displayCards();
+        }
+
+        function filterTable() {
+            const searchInput = document.getElementById('search-input').value.toLowerCase();
+            const zoneFilter = document.getElementById('zone-select').value;
+
+            filteredData = jsonData.filter(row => {
+                const searchMatch = row.some(cell => cell.toString().toLowerCase().includes(searchInput));
+                const zoneMatch = zoneFilter ? row[4].toLowerCase() === zoneFilter.toLowerCase() : true;
+                return searchMatch && zoneMatch;
+            });
+
+            currentPage = 1;
+            displayCards();
+        }
+
+        function populateZoneFilter() {
+            const zoneSelect = document.getElementById('zone-select');
+            const zones = [...new Set(jsonData.map(row => row[4]))];
+
+            zones.forEach(zone => {
+                const option = document.createElement('option');
+                option.value = zone;
+                option.textContent = zone;
+                zoneSelect.appendChild(option);
+            });
+        }
+    </script>
+</body>
+</html>
